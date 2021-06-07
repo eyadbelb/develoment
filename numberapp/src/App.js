@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { useState } from "react";
-import { Buttonsa, Buttonsas, Buttonss, Home } from "./styles";
+import { Buttonsa, Buttonsas, Buttonss, Globalstyle, Home } from "./styles";
 
 function App() {
   const generateRandomNumber = () => Math.floor(Math.random() * 100) + 1;
@@ -32,6 +32,7 @@ function App() {
   };
   return (
     <Home>
+      <Globalstyle />
       <h1>Guess The Number</h1>
 
       <Buttonsas placeholder="Type Something..." onChange={userInput} />

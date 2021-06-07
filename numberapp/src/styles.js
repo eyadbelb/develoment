@@ -1,5 +1,13 @@
-import styled from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 import Globalstyle from "styled-components";
+
+export const Globalstyle = createGlobalStyle`
+body{
+    background-color: #576574;
+}
+
+`;
+
 export const Home = styled.div`
   align-content: center;
   text-align: center;
